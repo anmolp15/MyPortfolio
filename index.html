@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmol Pandey</title>
+    <link rel="stylesheet" href="./css/styleP1.css">
+    <script src="https://kit.fontawesome.com/6f38b70ccc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- button to see navigation bar -->
+    <button id="nav-btn" class="nav-btns"> <i class="fa fa-bars" aria-hidden="true"></i> </button>
+
+    <!-- navigation bar -->
+    <div id="navigation">
+        <button id="remove-nav" class="nav-btns"> <i class="fa fa-times" aria-hidden="true"></i></button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#myinterests">my Interests</a></li>
+        </ul>
+    </div>   
+
+    <div class="contact">
+        <form action="">
+            <div id="cancel-form" style="text-align: end; user-select: none; cursor: pointer;">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <h1>Get In Touch!</h1>
+            <label for="name">Name <span>*</span></label>
+            <input type="text" name="name" required>
+
+            <label for="name">Email <span>*</span></label>
+            <input type="email" name="email" required>
+
+            <label for="subject">Subject </label>
+            <input type="text" name="subject">
+
+            <label for="message">Message <span>*</span></label>
+            <textarea name="message" id="message" cols="50" rows="10"></textarea>
+            <i>or mail me directly at:- <b>pandeyanmol603@gmail.com</b></i>
+            <br>
+            <button type="submit" id="send-message">Send</button>
+            
+        </form>
+    </div>
+    
+    <!-- main div containing all sections -->
+    <div class="main">
+        <!-- live background -->
+        <div id="background">
+            <div id="particles-js"></div>
+        </div>
+
+        <!-- section 1 - home -->
+        <section id="home">
+            <!-- about me section -->
+            <div class="details">
+                <div class="name">
+                    Anmol Pandey
+                </div>
+                <div class="about-me">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nam sequi officiis tempore enim eius ad fuga ipsa eos voluptas distinctio, aperiam nemo, accusamus velit! Libero nulla voluptate ipsam ratione.
+                </div>
+
+                <!-- buttons for contact -->
+                <div class="home-btns">
+                    <button id="get-in-touch">Get In Touch</button>
+                    <button id="resume-download"> <a href="./assets/APresume.pdf" download>Resume <i class="fa fa-download" aria-hidden="true"></i> </a></button>
+                    <button id="linkedin"> <a href="https://www.linkedin.com/in/anmol-pandey-997911112/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a> </button>
+                    <button id="github"><a href="https://github.com/anmolp15" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
+                    </a></button>
+                </div>
+            </div>
+
+            <!-- illustration div -->
+            <div class="person-illustration">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_mlp3zxve.json"  background="rgba(0, 0, 0, 0)"  speed="1"  style="width: 1000px; height: 560px;" loop autoplay></lottie-player>
+            </div>
+        </section>
+
+        <!-- projects section -->
+        <section id="projects">
+            <div class="section-main-display"></div>
+            <div class="name">Selected Work</div>
+        </section>
+
+
+        <!-- skills section -->
+        <section id="skills">
+            <div class="name">Skills</div>
+            <div class="section-main-display">
+                <!-- class containing the sphere -->
+                <span class="Sphere"></span>
+                <!-- Tag Cloud liberary -->
+                <script src="./javascript/TagCloud/TagCloud.min.js"></script>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="section-main-display"></div>
+            <div class="name">Experience</div>
+        </section>
+
+        <section id="education">
+            <div class="name">Education</div>
+            <div class="section-main-display"></div>
+        </section>
+
+        <section id="myinterests">
+            <div class="section-main-display"></div>
+            <div class="name">My Interests</div>
+        </section>
+    </div>
+
+
+    <script src="./javascript/scriptP1.js"></script>
+
+    <!-- particle js files -->
+    <script src="./javascript/particlejs/particles.js"></script>
+    <script src="./javascript/particlejs/app.js"></script>
+
+    <!-- tilt js files -->
+    <script src="./javascript/tilt/vanilla-tilt.js"></script>
+
+</body>
+</html>
