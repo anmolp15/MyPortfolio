@@ -13,6 +13,15 @@ navRemoveBtn.addEventListener('click', () =>{
     navAddBtn.style.display = 'block';
 });
 
+//close navigation bar on click of any list item
+let navLi = document.querySelectorAll('#navigation ul li');
+navLi.forEach((item) =>{
+    item.addEventListener('click', ()=>{
+        navBar.style.transform = 'translateY(-150%)';
+        navAddBtn.style.display = 'block';
+    })
+})
+
 
 // code for contact form addition and removal
 let contactBtn = document.getElementById('get-in-touch');
@@ -57,16 +66,6 @@ var tagCloud = TagCloud('.Sphere',skillsArray, {
     maxSpeed: 'fast',
     initSpeed: 'fast',
     direction: 225,
-    keep: true
+    keep: true,
+    // itemClass: 'sphere-element'
 });
-
-
-// window.addEventListener('scroll', () =>{
-//     window.scrollBy(0, document.getElementById('home').getBoundingClientRect().height);
-//     // console.log(document.getElementById('home').getBoundingClientRect().height);
-//     // console.log(document.getElementById('projects').getBoundingClientRect().height)
-//     // console.log(document.getElementById('skills').getBoundingClientRect().height)
-//     // console.log(document.getElementById('education').getBoundingClientRect().height)
-//     // console.log(document.getElementById('experience').getBoundingClientRect().height)
-//     // console.log(document.getElementById('myinterests').getBoundingClientRect().height)
-// });

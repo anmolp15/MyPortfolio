@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:display=swap'); */
 :root{
     --dark: #161515;
     --light: #e94b3c;
@@ -23,7 +23,7 @@ body{
 }
 #background{
     /* z-index: -1; */
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100%;
     background-attachment: fixed;
@@ -48,8 +48,9 @@ section{
 
 .section-main-display{
     width: 1000px;
-    /* height: 560px; */
+    height: 560px;
     height: max-content;
+    border-radius: 15px;
     /* border: 0.2px solid black; */
 }
 .section-main-display h1{
@@ -268,7 +269,6 @@ section{
 #projects .section-main-display{
     background-image: repeating-linear-gradient(to right, #592b63, #592b63c5);
     border: none;
-    border-radius: 15px;
     padding: 20px;
     transform-style: preserve-3d;
     perspective: 10000px;
@@ -360,14 +360,33 @@ section{
     position: relative;
 }
 #skills .section-main-display{
-    /* border: none; */
+    background-color: var(--light);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    width: 1000px;
+    height: 560px;
 }
 .Sphere{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-30%,-50%);
+    transform: translate(-50%,-50%);
     margin: 0px auto;
-    color: var(--darkblue);
-    font-size: 1.5rem;
+    color: white;
+    font-size: 1.35rem;
+}
+.sphere-element{
+    transition: all 0.3s ease-in-out;
+}
+.sphere-element:hover{
+    font-size: 1.75rem;
+}
+
+#skills .name{
+    color: white;
+    margin: 0px 20px;
+    text-shadow: 0px 0px 30px var(--light);
+}
+#skills .name:hover{
+    color: var(--light);
 }
