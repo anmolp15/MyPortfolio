@@ -9,7 +9,7 @@ navAddBtn.addEventListener('click', () =>{
 });
 
 navRemoveBtn.addEventListener('click', () =>{
-    navBar.style.transform = 'translateY(-100%)';
+    navBar.style.transform = 'translateY(-150%)';
     navAddBtn.style.display = 'block';
 });
 

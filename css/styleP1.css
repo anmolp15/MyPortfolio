@@ -37,6 +37,7 @@ button{
 
 section{
     box-sizing: border-box;
+    margin: 20px 0px;
     padding: 20px;
     width: 100%;
     height: 100vh;
@@ -55,7 +56,7 @@ section{
     font-size: 2.5rem;
     text-align: left;
     border-bottom: 2px solid black;
-    margin-top: 5px;
+    margin: 10px 20px;
     /* text-shadow: 2px 2px 10px rgb(112, 110, 110); */
 }
 
@@ -77,7 +78,7 @@ section{
     height: 100vh;
     background-color: #111972e7;
     position: absolute;
-    transform: translateY(-100%);
+    transform: translateY(-150%);
     transition: all 0.5s ease-in;
     display: flex;
     justify-content: center;
@@ -329,9 +330,9 @@ section{
 }
 .project-details, .project-links{
     color: white;
+    text-align: justify;
     transform: translateZ(40px);
-    padding-top: 15px;
-    padding-left: 35px;
+    padding: 15px 35px;
 }
 #projects .section-main-display:hover  .project-details{
     text-shadow: 5px 5px 10px black;
@@ -339,6 +340,21 @@ section{
 #projects .section-main-display:hover  .project-links{
     text-shadow: 5px 5px 10px black;
 }
+#projects .section-main-display h1{
+    color: white;
+    transform: translateZ(20px);
+    border-bottom: 2px solid white;
+}
+#projects .name{
+    color: white;
+    margin: 0px 20px;
+    text-shadow: 0px 0px 30px #592b63;
+}
+#projects .name:hover{
+    color: #592b63;
+}
+
+
 /* skills section */
 #skills{
     position: relative;
