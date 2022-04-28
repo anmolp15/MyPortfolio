@@ -20,18 +20,17 @@ let cancelForm = document.getElementById('cancel-form');
 let formDiv = document.querySelector('.contact');
 
 contactBtn.addEventListener('click', () =>{
-    formDiv.style.top = `${window.screenY}+50%`;
-    formDiv.style.transform = 'translate(-50%, -50%)';
+    formDiv.classList.add('move');
     document.querySelector('.main').style.opacity = `0.1`;
 });
 
 cancelForm.addEventListener('click', () =>{
-    formDiv.style.top = `50%`;
-    formDiv.style.transform = 'translate(-50%, -500%)';
+    formDiv.classList.remove('move');
     document.querySelector('.main').style.opacity = `1`;
 });
 
 
+// change get in touch button position
 window.addEventListener('scroll', () => {
     if (window.scrollY < contactBtn.getBoundingClientRect().y) {
         contactBtn.innerHTML = `Get In Touch`;
