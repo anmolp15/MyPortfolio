@@ -1,3 +1,9 @@
+// loader must be at top of js and body
+window.addEventListener('load', ()=>{
+    document.getElementById('loader-wrapper').classList.toggle('move-up');
+})
+
+
 // code for navigation bar addition and removal
 let navAddBtn = document.getElementById('nav-btn');
 let navBar = document.getElementById('navigation');
@@ -69,3 +75,5 @@ var tagCloud = TagCloud('.Sphere',skillsArray, {
     keep: true,
     // itemClass: 'sphere-element'
 });
+
+
