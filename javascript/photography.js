@@ -4,15 +4,24 @@ window.addEventListener('load', ()=>{
 })
 
 
-
 let imageArea = document.getElementById('image-area');
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
+let captionSpan = document.querySelector('#caption');;
 let i = 1;
+
+
+// add images here and html as well
+let aboutImageArray = ['Gwalior Fort', 'Taj Mahal, Agra', 'tansen tomb, Gwalior', 'Sun Temple, Gwalior', 'Precious Moment', 'Abstract', 'Garden', 'Garden', 'Sunset', 'Sunrise', 'Abstract', "Abstract", 'ravines of chambal', 'India Gate, Delhi', 'India Gate, Delhi', 'Lotus Temple, Delhi', 'BMW M4', 'Abstract Product', 'Abstract', 'Abstract', 'Ladhedi Gate, Gwalior', 'Abstract Product','Waterfall'];
 
 // function to set image in the display area
 function setDisplay() {
-    imageArea.style.backgroundImage = `url(../images/photography/${i}.jpg)`;
+    // imageArea.style.backgroundImage = `url(../images/photography/${i}.jpg)`;
+    imageArea.style.backgroundImage = `none`;
+    imageArea.innerHTML = ``;
+    imageArea.innerHTML = `<img src="./images/photography/${i}.jpg" alt="">`;
+    //set caption for image based upon index received
+    captionSpan.innerHTML= `<span>${aboutImageArray[i-1]}</span>`;
 }
 
 
@@ -26,7 +35,7 @@ prev.addEventListener('click',()=>{
 });
 
 next.addEventListener('click',()=>{
-    if(i>=21){
+    if(i>=aboutImageArray.length){
         return;
     }
     i++;

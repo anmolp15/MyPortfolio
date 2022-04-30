@@ -1,0 +1,125 @@
+
+
+
+/* page loading animation */
+@keyframes loader {
+    0% {
+        color: red;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        color: blue;
+        transform: rotate(360deg);
+    }
+
+    100% {
+        color: red;
+        transform: rotate(360deg);
+    }
+}
+
+.loader-shape i{
+    font-size: 40px;
+    animation: loader infinite;
+    animation-duration: 1s;
+}
+#loader-wrapper{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.move-up{
+    transform: translateY(-150%) !important;
+}
+
+
+
+body {
+    padding: 0px;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/backgroundTableAndPot2.png');
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+.container{
+    width: 50vw;
+    position: relative;
+}
+.container img{
+    width: 100%;
+}
+#display-area{
+    position: absolute;
+    width: 95%;
+    height: 58%;
+    top: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#image-area{
+    height: 100%;
+    width: 100%;
+}
+#image-area img{
+    height: 100%;
+    width: 100%;
+}
+#image-area video{
+    height: 100%;
+    width: 100%;
+}
+
+#caption{
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    font-size: 1.2rem;
+}
+#caption span{
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 7px;
+    background-color: black;
+}
+
+
+button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    font-weight: 900;
+    background:none;
+    border: none;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+button:hover{
+    background-color: rgba(128, 128, 128, 0.233);
+}
+#prev{
+    left: 0;
+    border-radius: 0px 8px 8px 0px;
+}
+#next{
+    right: 0;
+    border-radius: 8px 0px 0px 8px;
+}

@@ -6,12 +6,13 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right top,black, rgba(0, 0, 0, 0.5), black),url('../images/body-back2.jpg');
+    background-image: linear-gradient(to right top,black, rgba(0, 0, 0, 0.5), black),url('../images/body-back.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 }
+
 .macpro{
     width: 58vw;
     height: auto;
@@ -28,7 +29,8 @@ body{
     transform: translateX(-50%);
     background-color: rgba(27, 27, 27, 0.87);
     width: 98%;
-    height: 62vh;
+    max-height: 62vh;
+    height: 62%;
 }
 #image-area{
     height: 100%;
@@ -38,6 +40,27 @@ body{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image-area img{
+    max-width: 100%;
+    width: fit-content;
+    height: fit-content;
+    max-height: 100%;
+}
+#caption{
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    font-size: 1.2rem;
+}
+#caption span{
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 7px;
+    background-color: black;
 }
 button{
     position: absolute;
