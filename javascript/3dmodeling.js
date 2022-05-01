@@ -20,7 +20,7 @@ function setDisplay() {
     }
     else if (i == 2) {
         imageArea.innerHTML = ``;
-        imageArea.innerHTML = `<video src="./images/cad/" controls></video>`;
+        imageArea.innerHTML = `<video src="./images/cad/My Ferrari {HD}.mp4" controls></video>`;
     }
     else {
         imageArea.innerHTML = ``;

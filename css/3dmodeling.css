@@ -76,6 +76,12 @@ body {
 #image-area{
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
 }
 #image-area img{
     height: 100%;

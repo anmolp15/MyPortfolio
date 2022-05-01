@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 /* colors for body sections defined here */
 :root {
     --dark: #161515;
@@ -9,11 +11,10 @@
     --skillsl: #e94b3cc2;
     --experiecne: #34495e;
     --experiecnel: #34495ec2;
-    --education: #4E0C0E;
+    --education: teal;
     --educationl: #4E0C0Ec2;
-    /* --myinterests: #022e1e; */
-    --myinterests: #04754b;
-    --myinterestsl: #04754bc2;
+    --myinterests: #f53b57;
+    --myinterestsl: #f53b57c2;
 }
 
 html {
@@ -55,7 +56,7 @@ section {
     margin: 20px 0px;
     padding: 20px;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -244,6 +245,7 @@ textarea {
 /* home and about section */
 #home {
     justify-content: flex-start;
+    height: 100vh;
 }
 
 .details {
@@ -255,7 +257,7 @@ textarea {
 }
 
 /* this class will be used for all section headings */
-.name {
+.name{
     z-index: 2;
     font-size: 6rem;
     font-weight: 900;
@@ -284,6 +286,9 @@ textarea {
     text-align: justify;
     padding-right: 30px;
     margin: 10px 0px 30px 0px;
+    font-size: 1.25rem;
+    /* font-family: 'Freehand', cursive; */
+    font-family: 'Dancing Script', cursive;
 }
 
 .home-btns {
@@ -338,26 +343,6 @@ textarea {
     font-size: 2.5rem;
 }
 
-
-/* @keyframes changeBtn {
-    0%{
-        border-radius: 0%;
-    }
-    50%{
-        position: fixed;
-        bottom: 100px;
-        right: 400px;
-        border-radius: 25%;
-    }
-    100%{
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        border-radius: 50%;
-    }
-}
-
- */
 
 
 /* projects section */
@@ -608,8 +593,10 @@ textarea {
 
 /* education section */
 #education .section-main-display {
-    background-image: linear-gradient(to left, var(--education), var(--educationl));
-    padding: 40px;
+    background-image: url('../images/trophy-background.png');
+    background-position: bottom;
+    background-size: cover;
+    padding: 40px 0px;
     /* position: relative; */
     transform-style: preserve-3d;
     perspective: 1000px;
@@ -617,7 +604,23 @@ textarea {
     justify-content: center;
     align-items: center;
 }
-
+#edu-caption{
+    transition: all 0.25s ease-in-out;
+    font-size: 1.25rem;
+    text-align: center;
+}
+#edu-caption span{
+    text-shadow: 5px 5px 10px black;
+    padding: 5px 20px;
+    background-color: rgba(51, 50, 50, 0.5);
+    border-radius: 8px;
+    color: white;
+}
+.hide-caption{
+    visibility: 0;
+    opacity: 0;
+    user-select: none;
+}
 #education .name {
     color: white;
     margin: 0px 20px;
@@ -630,13 +633,17 @@ textarea {
 
 .each-edu {
     z-index: 3;
-    height: 445px;
+    height: 350px;
     width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     transition: all 0.3s ease-in-out;
+    margin-left: -20px;
 }
 
 .each-edu:hover {
-    transform: scale(1.15);
+    transform: scale(1.25);
 }
 
 .each-edu img {
@@ -723,7 +730,7 @@ textarea {
     padding-bottom: 20px;
     color: black;
     font-size: 1.6rem;
-    margin-top: -100px;
+    /* margin-top: -100px; */
 }
 .socials ul{
     list-style: none;

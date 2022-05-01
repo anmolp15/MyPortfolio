@@ -1,6 +1,7 @@
 // loader must be at top of js and body
 window.addEventListener('load', ()=>{
     document.getElementById('loader-wrapper').classList.toggle('move-up');
+    anime(animeObj); // text animation olay on page fully load
 })
 
 
@@ -73,7 +74,32 @@ var tagCloud = TagCloud('.Sphere',skillsArray, {
     initSpeed: 'fast',
     direction: 225,
     keep: true,
-    // itemClass: 'sphere-element'
 });
 
 
+
+let animeObj = {
+    targets: '#svg-name path',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutSine',
+    duration: 2000,
+    // delay: function(el, i) { return i * 200 },
+    delay: 1000,
+    direction: 'alternate',
+    loop: false
+};
+
+
+// tooltip for education section
+let eduCaptions = ['<span>Class X &#183 Science &#183 10 CGPA &#183 2013</span>', '<span>Class XII &#183 Science &#183 86% &#183 2015</span>', '<span>B.E. &#183 Automobile &#183 7.56 CGPA &#183 2015-2019</span>']
+document.querySelectorAll('.each-edu').forEach((item, index) =>{
+    item.addEventListener('mouseenter', () =>{
+        document.getElementById('edu-caption').innerHTML = '';
+        document.getElementById('edu-caption').classList.remove('hide-caption')
+        document.getElementById('edu-caption').innerHTML = `${eduCaptions[index]}`;
+    })
+
+    item.addEventListener('mouseleave', () =>{
+        document.getElementById('edu-caption').classList.add('hide-caption')
+    })
+})
