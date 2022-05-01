@@ -315,7 +315,11 @@ textarea {
     color: var(--darkblue);
     background: none;
 }
-
+#get-in-touch:hover{
+    color: white;
+    border: none;
+    background-color:  var(--darkblue);
+}
 .round-get-in-touch {
     position: fixed;
     bottom: 20px;
