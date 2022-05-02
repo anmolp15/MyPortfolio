@@ -70,7 +70,7 @@ const skillsArray = [
 
 var tagCloud = TagCloud('.Sphere',skillsArray, {
     radius: 300,
-    maxSpeed: 'fast',
+    maxSpeed: 'normal',
     initSpeed: 'fast',
     direction: 225,
     keep: true,

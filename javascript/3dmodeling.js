@@ -16,11 +16,11 @@ let aboutImageArray = ['Hoverboard Surface Modeling', 'ferrari surface modeling'
 function setDisplay() {
     if (i == 1) {
         imageArea.innerHTML = ``;
-        imageArea.innerHTML = `<video src="./images/cad/My Hoverboard 1 HD.mp4" controls></video>`;
+        imageArea.innerHTML = `<video src="./images/cad/hoverboard.mp4" controls></video>`;
     }
     else if (i == 2) {
         imageArea.innerHTML = ``;
-        imageArea.innerHTML = `<video src="./images/cad/My Ferrari {HD}.mp4" controls></video>`;
+        imageArea.innerHTML = `<video src="./images/cad/ferrari.mp4" controls></video>`;
     }
     else {
         imageArea.innerHTML = ``;
