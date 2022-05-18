@@ -1,8 +1,8 @@
 // loader must be at top of js and body
-// window.addEventListener('load', ()=>{
-//     document.getElementById('loader-wrapper').classList.toggle('move-up');
-//     anime(animeObj); // text animation olay on page fully load
-// })
+window.addEventListener('load', ()=>{
+    document.getElementById('loader-wrapper').classList.toggle('move-up');
+    anime(animeObj); // text animation olay on page fully load
+})
 
 
 // code for navigation bar addition and removal
