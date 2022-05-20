@@ -112,29 +112,6 @@ contactForm.addEventListener('submit', sendMessage);
 
 function sendMessage(e) {
     e.preventDefault(); //very important step
-    let name = document.getElementById('contact-name').value;
-    let message = document.getElementById('message').value;
-    let email = document.getElementById('contact-email').value;
-    let subject = document.getElementById('contact-subject').value;
-    Email.send({
-        Host : "smtp.gmail.com",
-        Username : "portfolio.anmol@gmail.com",
-        Password : "portfolio@603.anmol",
-        To : 'portfolio.anmol@gmail.com',
-        From : email,
-        Subject : subject,
-        Body : `name - ${name} <br> email id - ${email} <br> subject - ${subject} <br> message - ${message}`
-    }).then(
-      message => {
-          if (message == 'OK') {
-            alert('Mail Sent Successfully. Thanks for connecting!');
-          }
-          else {
-              alert(`error - ${message}`);
-          }
-      }
-    ).then(()=>{
-        contactForm.reset();
-    });
-    
+    window.alert("Thanks for connecting!");
+    window.location.reload();
 }

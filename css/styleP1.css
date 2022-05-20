@@ -63,7 +63,9 @@ section {
 }
 
 .section-main-display {
-    width: 1000px;
+    /* width: 1000px; */
+    width: 55vw;
+    max-width: 1000px;
     height: 560px;
     height: max-content;
     border-radius: 15px;
@@ -273,14 +275,14 @@ textarea {
     /* -webkit-text-stroke: 0.5px var(--lightblue); */
 }
 
-.person-illustration {
+/* .person-illustration {
     position: absolute;
     top: 50%;
     right: -120px;
     transform: translateY(-60%);
     width: 1000px;
     height: 560px;
-}
+} */
 
 .about-me {
     text-align: justify;
@@ -360,12 +362,16 @@ textarea {
 
 .mockups {
     padding-left: 20px;
-    height: 419.613px;
-    width: 700px;
+    max-height: 460px;
+    padding-bottom: 10px;
+    width: 90%;
     position: relative;
     user-select: none;
 }
-
+.mockups img{
+    width: 100%;
+}
+/* 
 #mac-pro {
     z-index: 5;
     height: 419px;
@@ -407,7 +413,7 @@ textarea {
 #iphone img {
     height: 100%;
     width: 100%;
-}
+} */
 
 .project-links a {
     color: white;
@@ -585,7 +591,8 @@ textarea {
 .timeline-traveller {
     position: sticky;
     transform: translateX(-17px);
-    top: 200px;
+    /* top: 200px; */
+    top: 25vh;
     font-size: 1.75rem;
     color: white;
 }
@@ -600,11 +607,12 @@ textarea {
     background-image: url('../images/trophy-background.png');
     background-position: bottom;
     background-size: cover;
-    padding: 40px 0px;
+    padding: 40px 40px 40px 0px;
     /* position: relative; */
     transform-style: preserve-3d;
     perspective: 1000px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -637,8 +645,10 @@ textarea {
 
 .each-edu {
     z-index: 3;
-    height: 350px;
-    width: 300px;
+    /* height: 350px; */
+    /* width: 300px; */
+    width: 30%;
+    min-width: 250px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -660,12 +670,12 @@ textarea {
 /* my interests section */
 #myinterests .section-main-display{
     background-image: linear-gradient(to right, var(--myinterests), var(--myinterestsl));
-    height: 560px;
+    /* height: 560px; */
     transform-style: preserve-3d;
     perspective: 1000px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: t; */
 }
 
 #myinterests .name {
@@ -679,7 +689,7 @@ textarea {
 }
 
 .hobby{
-    height: 90%;
+    /* height: 100%; */
     width: 45%;
     /* background-color: yellow; */
     transition: all 0.3s ease-in-out;
@@ -706,6 +716,10 @@ textarea {
 }
 
 .tooltip{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     user-select: none;
@@ -750,4 +764,70 @@ textarea {
 .socials ul li:hover{
     transform: scale(0.9);
     text-shadow: 0px 0px 50px rgba(77, 76, 76, 0.582);
+}
+
+
+/* responsiveness */
+@media screen and (min-width: 1200px) {
+    .person-illustration {
+    position: absolute;
+    top: 50%;
+    right: -120px;
+    transform: translateY(-60%);
+    width: 1000px;
+    height: 560px;
+}
+}
+@media screen and (max-width: 1420px) {
+    .person-illustration {
+        width: 900px;
+    }
+    .hobby-title h1{
+        font-size: 2.25rem
+    }
+    .timeline-traveller {
+        top: 35vh;;
+    }
+}
+
+
+@media screen and (max-width: 1350px) {
+    .name{
+        font-size: 5.5rem;
+    }
+    .person-illustration {
+        width: 800px;
+    }
+    .hobby-title h1{
+        font-size: 2rem
+    }
+
+
+    .exp {
+        margin: 20px;
+        width: 85%;
+    }
+    .exp:nth-child(2n) {
+        margin-left: 10px;
+    }
+    .timeline {
+        left: 90%;
+    }
+    .timeline-traveller {
+        top: 40vh;;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #myinterests .section-main-display {
+        flex-direction: column;
+    }
+    .hobby{
+        width: 90%;
+    }
+
+    /* #education .section-main-display {
+        flex-direction: column;
+    } */
+    
 }
