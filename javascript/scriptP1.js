@@ -115,3 +115,4 @@ function sendMessage(e) {
     window.alert("Thanks for connecting!");
     window.location.reload();
 }
+// working using smtp js is removed so as to make this project public on github and thus host it on github pages
