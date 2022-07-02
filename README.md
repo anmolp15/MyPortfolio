@@ -1,4 +1,3 @@
 # MyPortfolio
 
-
-WIP...
+Not mobile compatible yet! 
