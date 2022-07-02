@@ -831,3 +831,25 @@ textarea {
     } */
     
 }
+@media screen and (max-width: 500px) {
+    #portrait-mode-not-supported{
+        display: block !important;
+        overflow: -moz-hidden-unscrollable;
+    }
+}
+
+
+#portrait-mode-not-supported{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2030E0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
