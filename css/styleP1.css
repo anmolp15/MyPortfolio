@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 /* colors for body sections defined here */
 :root {
     --dark: #161515;
@@ -80,7 +81,7 @@ section {
     /* text-shadow: 2px 2px 10px rgb(112, 110, 110); */
 }
 
-#back-to-top{
+#back-to-top {
     position: fixed;
     bottom: 0;
     left: 50%;
@@ -219,12 +220,13 @@ textarea {
     }
 }
 
-.loader-shape i{
+.loader-shape i {
     font-size: 40px;
     animation: loader infinite;
     animation-duration: 1s;
 }
-#loader-wrapper{
+
+#loader-wrapper {
     margin: 0;
     padding: 0;
     top: 0;
@@ -238,7 +240,8 @@ textarea {
     justify-content: center;
     align-items: center;
 }
-.move-up{
+
+.move-up {
     transform: translateY(-150%) !important;
 }
 
@@ -259,7 +262,7 @@ textarea {
 }
 
 /* this class will be used for all section headings */
-.name{
+.name {
     z-index: 2;
     font-size: 6rem;
     font-weight: 900;
@@ -317,11 +320,13 @@ textarea {
     color: var(--darkblue);
     background: none;
 }
-#get-in-touch:hover{
+
+#get-in-touch:hover {
     color: white;
     border: none;
-    background-color:  var(--darkblue);
+    background-color: var(--darkblue);
 }
+
 .round-get-in-touch {
     position: fixed;
     bottom: 20px;
@@ -368,9 +373,11 @@ textarea {
     position: relative;
     user-select: none;
 }
-.mockups img{
+
+.mockups img {
     width: 100%;
 }
+
 /* 
 #mac-pro {
     z-index: 5;
@@ -433,9 +440,11 @@ textarea {
     transform: translateZ(40px);
     padding: 15px 35px;
 }
-.project-details ol li{
+
+.project-details ol li {
     text-align: justify;
 }
+
 #projects .section-main-display:hover .project-details {
     text-shadow: 5px 5px 10px black;
 }
@@ -560,7 +569,7 @@ textarea {
 .exp-logo {
     transform: translateZ(60px);
     height: 60px;
-    width: 60px;
+    width: 70px
 }
 
 .exp-logo img {
@@ -571,14 +580,15 @@ textarea {
 .description {
     color: white;
     padding: 0px 10px;
+    margin-bottom: 10px;
 }
 
 .timeline {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
-    height: 50%;
+    height: 60%;
 }
 
 .timeline-divider {
@@ -592,7 +602,7 @@ textarea {
     position: sticky;
     transform: translateX(-17px);
     /* top: 200px; */
-    top: 25vh;
+    top: 95vh;
     font-size: 1.75rem;
     color: white;
 }
@@ -616,23 +626,27 @@ textarea {
     justify-content: center;
     align-items: center;
 }
-#edu-caption{
+
+#edu-caption {
     transition: all 0.25s ease-in-out;
     font-size: 1.25rem;
     text-align: center;
 }
-#edu-caption span{
+
+#edu-caption span {
     text-shadow: 5px 5px 10px black;
     padding: 5px 20px;
     background-color: rgba(51, 50, 50, 0.5);
     border-radius: 8px;
     color: white;
 }
-.hide-caption{
+
+.hide-caption {
     visibility: 0;
     opacity: 0;
     user-select: none;
 }
+
 #education .name {
     color: white;
     margin: 0px 20px;
@@ -668,7 +682,7 @@ textarea {
 
 
 /* my interests section */
-#myinterests .section-main-display{
+#myinterests .section-main-display {
     background-image: linear-gradient(to right, var(--myinterests), var(--myinterestsl));
     /* height: 560px; */
     transform-style: preserve-3d;
@@ -688,34 +702,39 @@ textarea {
     color: var(--myinterests);
 }
 
-.hobby{
+.hobby {
     /* height: 100%; */
     width: 45%;
     /* background-color: yellow; */
     transition: all 0.3s ease-in-out;
     color: white;
 }
-.hobby:hover{
+
+.hobby:hover {
     transform: translateZ(40px);
 }
-.hobby-title{
+
+.hobby-title {
     border-bottom: 2px solid white;
 }
-#myinterests .section-main-display:hover .hobby-title{
+
+#myinterests .section-main-display:hover .hobby-title {
     text-shadow: 5px 5px 10px black;
 }
-.hobby-details img{
+
+.hobby-details img {
     height: auto;
     width: 90%;
     filter: saturate(1.5);
     cursor: pointer;
     transition: all 0.25s ease-in-out;
 }
-.hobby-details img:hover{
-    transform: translateZ(70px);  
+
+.hobby-details img:hover {
+    transform: translateZ(70px);
 }
 
-.tooltip{
+.tooltip {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -727,13 +746,14 @@ textarea {
     opacity: 0;
     transition: all 0.25s ease-in-out;
 }
-.tooltip h3{
+
+.tooltip h3 {
     padding: 5px 20px;
     background-color: rgba(51, 50, 50, 0.5);
     border-radius: 8px;
 }
 
-.hobby-details:hover + .tooltip{
+.hobby-details:hover+.tooltip {
     visibility: 1 !important;
     opacity: 1 !important;
     text-shadow: 5px 5px 10px black;
@@ -741,7 +761,7 @@ textarea {
 
 
 /* socials */
-.socials{
+.socials {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -750,18 +770,21 @@ textarea {
     font-size: 1.6rem;
     /* margin-top: -100px; */
 }
-.socials ul{
+
+.socials ul {
     list-style: none;
     display: flex;
-    
+
 }
-.socials ul li{
+
+.socials ul li {
     z-index: 3;
     display: inline;
     margin: 5px 20px;
     transition: all 0.25s ease-in-out;
 }
-.socials ul li:hover{
+
+.socials ul li:hover {
     transform: scale(0.9);
     text-shadow: 0px 0px 50px rgba(77, 76, 76, 0.582);
 }
@@ -770,35 +793,41 @@ textarea {
 /* responsiveness */
 @media screen and (min-width: 1200px) {
     .person-illustration {
-    position: absolute;
-    top: 50%;
-    right: -120px;
-    transform: translateY(-60%);
-    width: 1000px;
-    height: 560px;
+        position: absolute;
+        top: 50%;
+        right: -120px;
+        transform: translateY(-60%);
+        width: 1000px;
+        height: 560px;
+    }
 }
-}
+
 @media screen and (max-width: 1420px) {
     .person-illustration {
         width: 900px;
     }
-    .hobby-title h1{
+
+    .hobby-title h1 {
         font-size: 2.25rem
     }
+
     .timeline-traveller {
-        top: 35vh;;
+        top: 35vh;
+        ;
     }
 }
 
 
 @media screen and (max-width: 1350px) {
-    .name{
+    .name {
         font-size: 5.5rem;
     }
+
     .person-illustration {
         width: 800px;
     }
-    .hobby-title h1{
+
+    .hobby-title h1 {
         font-size: 2rem
     }
 
@@ -807,14 +836,18 @@ textarea {
         margin: 20px;
         width: 85%;
     }
+
     .exp:nth-child(2n) {
         margin-left: 10px;
     }
+
     .timeline {
         left: 90%;
     }
+
     .timeline-traveller {
-        top: 40vh;;
+        top: 40vh;
+        ;
     }
 }
 
@@ -822,24 +855,26 @@ textarea {
     #myinterests .section-main-display {
         flex-direction: column;
     }
-    .hobby{
+
+    .hobby {
         width: 90%;
     }
 
     /* #education .section-main-display {
         flex-direction: column;
     } */
-    
+
 }
+
 @media screen and (max-width: 500px) {
-    #portrait-mode-not-supported{
+    #portrait-mode-not-supported {
         display: block !important;
         overflow: -moz-hidden-unscrollable;
     }
 }
 
 
-#portrait-mode-not-supported{
+#portrait-mode-not-supported {
     height: 100vh;
     width: 100vw;
     background-color: #2030E0;
