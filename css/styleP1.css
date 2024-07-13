@@ -609,7 +609,7 @@ textarea {
 
 .timeline-traveller i {
     position: sticky;
-    transform: rotate(90deg);
+    transform: rotate(270deg);
 }
 
 /* education section */
